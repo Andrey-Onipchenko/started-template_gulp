@@ -1,0 +1,10 @@
+.header {
+  &__wrapper {
+    @include flex(space-between, center, nowrap);
+  }
+}
+.menu {
+  &__list {
+    @include flex(space-between, center, nowrap);
+  }
+}

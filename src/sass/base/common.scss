@@ -1,0 +1,27 @@
+body {
+  color: $mainFontColor;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  line-height: $mainLineHeight;
+}
+.container {
+  max-width: $containerWidth;
+  padding: 0 15px;
+  margin: 0 auto;
+  @media (max-width: $sm) {
+    max-width: 100%;
+  }
+  @media (max-width: $sl) {
+    max-width: 720px;
+  }
+  @media (max-width: $tb) {
+    max-width: 960px;
+  }
+  @media (max-width: $lg) {
+    max-width: 1140px;
+  }
+}
+.logo {
+  max-width: 32px;
+}
