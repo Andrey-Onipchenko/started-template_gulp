@@ -9,14 +9,14 @@ const paths = require('./gulp/paths');
 
 const serve = () => {
   return browserSync.init({
-    server: 'build',
+    server: './build',
     notify: false,
     open: false,
     cors: true,
     ui: false,
     logPrefix: 'DevServer',
     host: 'localhost',
-    port: process.env.PORT || 1234,
+    port: process.env.PORT || 4000,
   });
 };
 

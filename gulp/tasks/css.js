@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sourcemaps = require('gulp-sourcemaps');
 const plumber = require('gulp-plumber');
+const sassGlob = require('gulp-sass-glob');
 const sass = require('gulp-sass');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
@@ -18,6 +19,7 @@ const css = () => {
     .src(paths.src.css)
     .pipe(plumber())
     .pipe(mode.development(sourcemaps.init()))
+    .pipe(sassGlob())
     .pipe(
       sass({
         sourceMap: true,

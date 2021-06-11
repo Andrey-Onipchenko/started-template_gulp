@@ -23,5 +23,9 @@ body {
   }
 }
 .logo {
-  max-width: 32px;
+  display: inline-block;
+  &__img {
+    max-width: 32px;
+    width: 100%;
+  }
 }

@@ -4,6 +4,7 @@
   }
 }
 .menu {
+  width: 40%;
   &__list {
     @include flex(space-between, center, nowrap);
   }
